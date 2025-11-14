@@ -1130,6 +1130,7 @@
 	position: relative;
 	overflow: hidden;
 	padding: 0px 0px 220px;
+	margin-bottom: 50px;
 }
 
 .offer-one.style-two {
@@ -1142,7 +1143,7 @@
 	bottom: 0px;
 	width: 830px;
 	height: 900px;
-	border-radius: 45px;
+	border-radius: 50px;
 	background-color: #EEEEEE;
 }
 
