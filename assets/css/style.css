@@ -457,15 +457,25 @@
 }
 
 .clients-one .client-image {
-	position: relative;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
 }
 
 .clients-one .client-image img {
-	position: relative;
+	display: block;
 	margin: 0 auto;
-	display: inline-block;
 	padding: 0 20px;
+	max-width: 120px;
+	/* set desired max width */
+	max-height: 60px;
+	/* set desired max height */
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	/* ensures image scales proportionally */
 	transition: all 500ms ease;
 	-moz-transition: all 500ms ease;
 	-webkit-transition: all 500ms ease;
@@ -979,7 +989,7 @@
 	padding-bottom: 0px;
 }
 
-.process-one .step-block_one:nth-child(2) {
+/* .process-one .step-block_one:nth-child(2) {
 
 	top: 30px;
 }
@@ -1002,6 +1012,14 @@
 .process-one .step-block_one:nth-child(4) {
 	top: -325px;
 
+} */
+
+.process-one .row {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	/* <<< makes all children equal height */
 }
 
 .step-block_one:last-child .step-block_one-inner:before {
@@ -1010,11 +1028,15 @@
 
 .step-block_one {
 	position: relative;
+	flex: 1;
+	min-width: 250px;
+
 }
 
 .step-block_one-inner {
 	position: relative;
-	padding: 65px 50px;
+	height: 100%;
+	padding: 65px 30px;
 	border-radius: 20px;
 	border: 2px solid #D9D9D9;
 }
@@ -1022,7 +1044,7 @@
 .step-block_one-inner:before {
 	position: absolute;
 	content: '';
-	right: -29px;
+	right: -28px;
 	bottom: 60px;
 	width: 30px;
 	height: 90px;
@@ -1108,6 +1130,7 @@
 
 .process-one_button {
 	position: relative;
+	margin-top: 200px;
 }
 
 .process-one_content-text {
@@ -4707,7 +4730,7 @@
 
 .clients-two {
 	position: relative;
-	padding: 120px 0px 120px;
+	padding: 120px 0;
 }
 
 .clients-two.style-two {
@@ -4715,47 +4738,57 @@
 }
 
 .clients-two .inner-container {
-	position: relative;
-	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	/* horizontal center */
 	align-items: center;
-	border-radius: 15px;
+	/* vertical center */
 	border: 1px solid #AAAAAA;
-	border-bottom: 0px;
+	/* outer border */
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 .clients-two .column {
-	position: relative;
-	width: 20%;
-	transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-webkit-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
-	border-right: 1px solid #AAAAAA;
-	border-bottom: 1px solid #AAAAAA;
+	flex: 0 1 150px;
+	/* fixed column width */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* border-right: 1px solid #AAAAAA; */
+	/* border-bottom: 1px solid #AAAAAA; */
+	padding: 20px;
+	box-sizing: border-box;
 }
 
-.clients-two .column:nth-child(5n + 0) {
+.clients-two .column:nth-child(5n) {
 	border-right: none;
 }
 
 .clients-two .client-image {
-	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
 }
 
 .clients-two .client-image img {
-	position: relative;
-	transition: all 300ms ease;
-	-moz-transition: all 300ms ease;
-	-webkit-transition: all 300ms ease;
-	-ms-transition: all 300ms ease;
-	-o-transition: all 300ms ease;
+	max-width: 120px;
+	/* adjust as needed */
+	max-height: 60px;
+	/* adjust as needed */
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	/* keeps aspect ratio */
+	display: block;
+	margin: 0 auto;
 }
 
 .clients-two .client-image:hover img {
-	opacity: 0.50;
+	opacity: 0.5;
 }
 
 /*** 
@@ -10152,4 +10185,56 @@
 
 .color-palate {
 	display: none;
+}
+
+
+
+
+
+.custom-card {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	border-radius: 25px;
+	overflow: hidden;
+	min-height: 420px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Softer modern gradient (lighter for background visibility) */
+.custom-card::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(0deg,
+			rgba(32, 40, 119, 0.5) 0%,
+			rgba(85, 34, 130, 0.4) 50%,
+			rgba(120, 48, 156, 0.4) 100%);
+	z-index: 1;
+}
+
+.custom-card-content {
+	position: relative;
+	z-index: 2;
+	padding: 40px 35px;
+	color: white;
+
+}
+
+.custom-card h2 {
+	font-size: 1.25rem;
+	line-height: 1.6;
+	font-weight: 600;
+	max-width: 90%;
+	margin: 0;
+}
+
+/* Soft hover animation */
+.custom-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
 }

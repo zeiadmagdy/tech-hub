@@ -15,7 +15,9 @@
 		rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
 		rel="stylesheet">
-
+	<link href="features.css" rel="stylesheet">
+	<link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
+	<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 	<!-- Color Switcher Mockup -->
 	<link href="assets/css/color-switcher-design.css" rel="stylesheet">
 
@@ -31,6 +33,85 @@
 </head>
 
 <body>
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+		<symbol id="bootstrap" viewBox="0 0 118 94">
+			<title>Bootstrap</title>
+			<path fill-rule="evenodd" clip-rule="evenodd"
+				d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+			</path>
+		</symbol>
+		<symbol id="home" viewBox="0 0 16 16">
+			<path
+				d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z" />
+		</symbol>
+		<symbol id="speedometer2" viewBox="0 0 16 16">
+			<path
+				d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+			<path fill-rule="evenodd"
+				d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z" />
+		</symbol>
+		<symbol id="table" viewBox="0 0 16 16">
+			<path
+				d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z" />
+		</symbol>
+		<symbol id="people-circle" viewBox="0 0 16 16">
+			<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+			<path fill-rule="evenodd"
+				d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+		</symbol>
+		<symbol id="grid" viewBox="0 0 16 16">
+			<path
+				d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+		</symbol>
+		<symbol id="collection" viewBox="0 0 16 16">
+			<path
+				d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z" />
+		</symbol>
+		<symbol id="calendar3" viewBox="0 0 16 16">
+			<path
+				d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" />
+			<path
+				d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+		</symbol>
+		<symbol id="chat-quote-fill" viewBox="0 0 16 16">
+			<path
+				d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z" />
+		</symbol>
+		<symbol id="cpu-fill" viewBox="0 0 16 16">
+			<path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+			<path
+				d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+		</symbol>
+		<symbol id="gear-fill" viewBox="0 0 16 16">
+			<path
+				d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+		</symbol>
+		<symbol id="speedometer" viewBox="0 0 16 16">
+			<path
+				d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+			<path fill-rule="evenodd"
+				d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+		</symbol>
+		<symbol id="toggles2" viewBox="0 0 16 16">
+			<path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z" />
+			<path
+				d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z" />
+			<path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+		</symbol>
+		<symbol id="tools" viewBox="0 0 16 16">
+			<path
+				d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
+		</symbol>
+		<symbol id="chevron-right" viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+		</symbol>
+		<symbol id="geo-fill" viewBox="0 0 16 16">
+			<path fill-rule="evenodd"
+				d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+		</symbol>
+	</svg>
 
 	<div class="page-wrapper">
 
@@ -55,9 +136,10 @@
 							<!-- Info List -->
 							<ul class="header-top_list-two d-flex flex-wrap">
 								<li><span class="icon fa-classic fa-solid fa-envelope fa-fw"></span><a
-										href="mailto:ithub@mail.com">ithub@mail.com</a></li>
-								<li><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>24 Street, New
-									York, USA</li>
+										href="mailto:Info@techhub-me.com">Info@techhub-me.com</a></li>
+								<li><span class="icon fa-classic fa-solid fa-location-dot fa-fw"></span>Ajman NuVentures
+									Centre
+									Free Zone (ANCFZ)</li>
 							</ul>
 
 						</div>
@@ -163,9 +245,9 @@
 													</div>
 												</div> -->
 											</li>
-											<li class="dropdown"><a href="#">About</a>
+											<li><a href="about.html">About</a>
 												<ul>
-													<li><a href="about.html">About us</a></li>
+													<!-- <li><a href="about.html">About us</a></li> -->
 													<!-- <li><a href="faq.html">Faq</a></li>
 													<li><a href="price.html">price</a></li>
 													<li><a href="testimonial.html">Testimonial</a></li>
@@ -179,15 +261,15 @@
 													</li> -->
 												</ul>
 											</li>
-											<li class="dropdown"><a href="#">Services</a>
+											<li><a href="services.html">Solutions</a>
 												<ul>
-													<li><a href="services.html">services</a></li>
+													<!-- <li><a href="services.html">services</a></li> -->
 													<!-- <li><a href="service-detail.html">services detail</a></li> -->
 												</ul>
 											</li>
-											<li class="dropdown"><a href="#">project</a>
+											<li><a href="service-detail.html">Services</a>
 												<ul>
-													<li><a href="project.html">project</a></li>
+													<!-- <li><a href="project.html">project</a></li> -->
 													<!-- <li><a href="project-detail.html">project detail</a></li> -->
 												</ul>
 											</li>
@@ -210,9 +292,9 @@
 													<li><a href="not-found.html">Not Found</a></li>
 												</ul> -->
 											</li>
-											<li class="dropdown"><a href="#">Contact</a>
+											<li><a href="contact.html">Contact</a>
 												<ul>
-													<li><a href="contact.html">Contact</a></li>
+													<!-- <li><a href="contact.html">Contact</a></li> -->
 													<!-- <li><a href="contact-2.html">Contact 02</a></li> -->
 												</ul>
 											</li>
@@ -225,18 +307,18 @@
 							<div class="outer-box d-flex align-items-center flex-wrap">
 
 								<!-- Search Btn -->
-								<div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
-								</div>
+								<!-- <div class="search-box-btn search-box-outer"><span class="icon fa fa-search"></span>
+								</div> -->
 
 								<!-- Button Box -->
-								<div class="main-header_button">
+								<!-- <div class="main-header_button">
 									<a href="about.html" class="theme-btn btn-style-one">
 										<span class="btn-wrap">
 											<span class="text-one">Get Started</span>
 											<span class="text-two">Get Started</span>
 										</span>
 									</a>
-								</div>
+								</div> -->
 
 								<!-- About Widget -->
 								<span class="about-widget">
@@ -287,12 +369,13 @@
 			<div class="sidebar-inner">
 				<div class="upper-box">
 					<div class="image">
-						<img src="assets/images/resource/about-1.jpg" alt="" />
+						<img src="assets/images/resource/about2.jpg" alt="" />
 					</div>
 					<div class="content-box">
-						<h3>About <span>ITHUB</span></h3>
-						<div class="text">Partnering with ITHUB-iT Consulting ensures peace of mind, knowing that your
-							books are accurately updated in real time, and taxes are filed and paid on schedule.</div>
+						<h3>About <span>Tech-Hub</span></h3>
+						<div class="text">Partnering with Tech HUB ensures peace of mind, knowing your IT infrastructure
+							is secure, scalable, and optimized — empowering your business to grow confidently in the
+							digital age.</div>
 						<ul class="about-sidebar_list">
 							<li>Discover the Project</li>
 							<li>Strategy Development</li>
@@ -303,10 +386,14 @@
 				</div>
 				<!-- Social Box -->
 				<div class="social-box">
-					<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-					<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-					<a href="https://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-					<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.facebook.com/profile.php?id=61580659992608" target="_blank"><i
+							class="fa-brands fa-facebook-f"></i> </a>
+					<a href="https://www.instagram.com/tech.hub.me/" target="_blank"><i
+							class="fa-brands fa-instagram"></i></a>
+					<a href="https://www.linkedin.com/company/techhub-me" target="_blank"><i
+							class="fa-brands fa-linkedin-in"></i></a>
+					<a href="https://wa.me/201097074096?text=Hello%20I%20would%20like%20to%20reach%20you%20about%20your%20services"
+						target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
 				</div>
 			</div>
 		</div>
@@ -315,16 +402,16 @@
 		<!-- Page Title -->
 		<section class="page-title">
 			<div class="page-title_big-title">About us</div>
-			<div class="page-title_bg-image" style="background-image:url(assets/images/background/3.jpg)"></div>
-			<div class="page-title_shape-one" style="background-image:url(assets/images/background/page-title-1.png)">
+			<div class="page-title_bg-image" style="background-image:url(assets/images/background/about2.jpg)"></div>
+			<div class="page-title_shape-one" style="background-image:url(assets/images/background/about1.png)">
 			</div>
-			<div class="page-title_shape-two" style="background-image:url(assets/images/background/page-title-2.png)">
+			<div class="page-title_shape-two" style="background-image:url(assets/images/background/about1.png)">
 			</div>
 			<div class="auto-container">
 				<h1>About us</h1>
 				<ul class="bread-crumb clearfix">
-					<li><a href="index.html">Home</a></li>
-					<li>about us</li>
+					<!-- <li><a href="index.html">Home</a></li>
+					<li>about us</li> -->
 				</ul>
 			</div>
 		</section>
@@ -340,23 +427,26 @@
 						<div class="about-two_title-outer">
 							<!-- Title Box -->
 							<div class="sec-title_title">
-								About Us
+								WHO WE ARE
 								<div class="sec-title_dots">
 									<span></span>
 									<span></span>
 									<span></span>
 								</div>
 							</div>
-							<h2 class="about-two_title">Quickly drive interoperable portals via <i>technology</i>
-								economically sound <span>networks website solutions</span> redefine the orthogonal
-								<strong>ITHUB.</strong>
-							</h2>
+							<h4><strong>TECH HUB</strong> is a premier IT Value Added Reseller with a solid background
+								in
+								Physical Security & Data Center Solutions, as well as the ever-
+								evolving real of smart intelligent technology and network
+								infrastructure. We understand the intricacies of the digital
+								multiverse. Our talented and diverse teams and high titled
+							</h4>
 							<div class="about-two_image-outer">
-								<a href="https://www.youtube.com/watch?v=kxPCFljwJws"
+								<!-- <a href="https://www.youtube.com/watch?v=kxPCFljwJws"
 									class="about-two_video lightbox-video"><span><img src="assets/images/icons/play.png"
-											alt="" /><i class="ripple"></i></span></a>
+											alt="" /><i class="ripple"></i></span></a> -->
 								<div class="about-two_image">
-									<img src="assets/images/resource/about-4.jpg" alt="" />
+									<img src="assets/images/background/11.jpg" alt="" />
 								</div>
 							</div>
 						</div>
@@ -365,16 +455,23 @@
 					<div class="about-two_image-column col-lg-6 col-md-12 col-sm-12">
 						<div class="about-two_image-column_outer">
 							<div class="about-two_image-two">
-								<img src="assets/images/resource/about-5.jpg" alt="" />
+								<img src="assets/images/background/about2.jpg" alt="" />
 							</div>
-							<div class="about-two_text">We are web designers, developers, project managers, And digital
-								marketing professionals dedicated developers, project managers, And digital marketing
+							<div class="about-two_text">MEET US <br>
+								TECH-HUB serves its customers with outstanding P.E.O.P.L.E
+								“Proactive, Efficient, Organized, Productive, Loyal
+								Employees”.
+								<br><br>
+								TECH-HUB provides customers with opportunity to partner with some
+								of the best & the highly trainedand qualified people in the
+								business, mixing experience, businesssense and solid
+								communication skills.
 							</div>
 							<!-- Skills -->
 							<div class="default-skills">
 
 								<!-- Skill Item -->
-								<div class="default-skill-item">
+								<!-- <div class="default-skill-item">
 									<div class="default-skill-title">our capabilities</div>
 									<div class="default-skill-bar">
 										<div class="default-bar-inner">
@@ -385,10 +482,10 @@
 									</div>
 									<div class="default-count-box count-box"><span class="count-text" data-speed="2000"
 											data-stop="70">0</span>%</div>
-								</div>
+								</div> -->
 
 								<!-- Skill Item -->
-								<div class="default-skill-item">
+								<!-- <div class="default-skill-item">
 									<div class="default-skill-title">our responsible</div>
 									<div class="default-skill-bar">
 										<div class="default-bar-inner">
@@ -399,18 +496,18 @@
 									</div>
 									<div class="default-count-box count-box"><span class="count-text" data-speed="2000"
 											data-stop="80">0</span>%</div>
-								</div>
+								</div> -->
 
 							</div>
 
 							<!-- Button Box -->
 							<div class="about-two_button">
-								<a href="about.html" class="theme-btn btn-style-three">
+								<!-- <a href="about.html" class="theme-btn btn-style-three">
 									<span class="btn-wrap">
 										<span class="text-one">About More</span>
 										<span class="text-two">About More</span>
 									</span>
-								</a>
+								</a> -->
 							</div>
 						</div>
 					</div>
@@ -418,6 +515,166 @@
 			</div>
 		</section>
 		<!-- End About Two -->
+
+		<!-- Icon Grid -->
+		<div class="container px-4 py-5" id="icon-grid">
+			<div class="sec-title_title">
+				Strategic Objectives
+				<div class="sec-title_dots">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#gear-fill" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Maintain a commitment to customer satisfaction</h4> -->
+						<p class="fw-bold mb-0">Maintain a commitment to customer satisfaction</p>
+
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#cpu-fill" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Commitment to provide solutions and services on internationally approved
+							and locally applicable standard</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#calendar3" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Insist on keeping a global competitive
+							edge to the benefit of our customer through contentious.</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#home" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Provide training and enhancement of staff member’s skills for them to
+							deliver the best services to our customers</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#speedometer2" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Operational Excellence and Streamline processes
+							and workflows to enhance efficiency and reduce
+							costs.</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#toggles2" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Continuously explore and adopt cutting-edge
+							technologies to offer state-of-the-art solutions</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#geo-fill" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Customer Satisfaction: Prioritize client needs and deliver tailored
+							solutions that exceed expectations.</p>
+					</div>
+				</div>
+				<div class="col d-flex align-items-start">
+					<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+						<use xlink:href="#tools" />
+					</svg>
+					<div>
+						<!-- <h4 class="fw-bold mb-0">Featured title</h4> -->
+						<p class="fw-bold mb-0">Sustainable Growth and Foster long-term growth through strategic
+							partnerships and market expansion</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Icon Grid -->
+
+		<!-- Custom cards -->
+
+		<div class="container px-4 py-5" id="custom-cards">
+			<div class="sec-title_title">
+				Our Values
+				<div class="sec-title_dots">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+
+			<div class="row row-cols-1 row-cols-lg-3 g-4 py-4">
+
+				<div class="col">
+					<div class="custom-card shadow-lg"
+						style="background-image: url('assets/images/background/cards.jpg');">
+						<div class="custom-card-content">
+							<h2>
+								Valuing people<br>
+								We believe that our success depends first and foremost on people.
+								By respecting people in everything we do, we will develop and maintain high quality,
+								mutually beneficial relationships with our customer, professional colleagues,
+								referral sources, vendors, community members and each other.
+							</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="custom-card shadow-lg"
+						style="background-image: url('assets/images/background/cards.jpg');">
+						<div class="custom-card-content">
+							<h2>
+								Building customer Relationship<br>
+								We seek to earn long-term customer loyalty for developing a deep understanding
+								of each customer’s business and personal goals by demonstrating unwavering
+								reliability and integrity in our work and acting as an independent and
+								objective advisor to our customer.
+							</h2>
+						</div>
+					</div>
+				</div>
+
+				<div class="col">
+					<div class="custom-card shadow-lg"
+						style="background-image: url('assets/images/background/cards.jpg');">
+						<div class="custom-card-content">
+							<h2>
+								Quality & integrity<br>
+								We will maintain an environment where a commitment to quality, honesty,
+								respect, fairness and professional ethics governs the actions and decisions
+								of everyone within our firm.
+							</h2>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- End Custom cards -->
 
 		<!-- Marketing One -->
 		<section class="marketing-one style-two">
@@ -435,7 +692,7 @@
 		<!-- End Marketing One -->
 
 		<!-- Achieve One -->
-		<section class="achieve-one">
+		<!-- <section class="achieve-one">
 			<div class="achieve-one_bg" style="background-image:url(assets/images/background/1.png)"></div>
 			<div class="achieve-one_vector" style="background-image:url(assets/images/background/vector-1.png)"></div>
 			<div class="achieve-one_vector-two" style="background-image:url(assets/images/background/vector-2.png)">
@@ -446,60 +703,60 @@
 				</div>
 
 				<div class="achieve-one_counter">
-					<div class="row g-0 clearfix">
-						<!-- Counter One -->
-						<div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
+					<div class="row g-0 clearfix"> -->
+		<!-- Counter One -->
+		<!-- <div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
 							<div class="counter-one_inner wow fadeInLeft" data-wow-delay="0ms"
 								data-wow-duration="1500ms">
 								<div class="counter-one_text">Satisfied Clients All <br> Over the World</div>
 								<div class="counter-one_count"><span class="odometer" data-count="8"></span>M</div>
 							</div>
-						</div>
-						<!-- Counter One -->
-						<div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
+						</div> -->
+		<!-- Counter One -->
+		<!-- <div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
 							<div class="counter-one_inner wow fadeInLeft" data-wow-delay="0ms"
 								data-wow-duration="1500ms">
 								<div class="counter-one_text">Clients Satisfactory <br> Reviews</div>
 								<div class="counter-one_count"><span class="odometer" data-count="316"></span></div>
 							</div>
-						</div>
-						<!-- Counter One -->
-						<div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
+						</div> -->
+		<!-- Counter One -->
+		<!-- <div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
 							<div class="counter-one_inner wow fadeInLeft" data-wow-delay="0ms"
 								data-wow-duration="1500ms">
 								<div class="counter-one_text">Success Rate</div>
 								<div class="counter-one_count"><span class="odometer" data-count="97"></span>%</div>
 							</div>
-						</div>
-						<!-- Counter One -->
-						<div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
+						</div> -->
+		<!-- Counter One -->
+		<!-- <div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
 							<div class="counter-one_inner wow fadeInLeft" data-wow-delay="0ms"
 								data-wow-duration="1500ms">
 								<div class="counter-one_text">Team Members</div>
 								<div class="counter-one_count"><span class="odometer" data-count="42"></span></div>
 							</div>
-						</div>
-						<!-- Counter One -->
-						<div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
+						</div> -->
+		<!-- Counter One -->
+		<!-- <div class="counter-one_column col-lg-4 col-md-6 col-sm-12">
 							<div class="counter-one_inner wow fadeInLeft" data-wow-delay="0ms"
 								data-wow-duration="1500ms">
 								<div class="counter-one_text">Satisfied Clients All Over <br> the World</div>
 								<div class="counter-one_count"><span class="odometer" data-count="4500"></span></div>
 							</div>
-						</div>
-					</div>
+						</div> -->
+		<!-- </div>
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 		<!-- End Achieve One -->
 
 		<!-- Video One -->
-		<section class="video-one">
+		<!-- <section class="video-one">
 			<div class="video-one_bg" style="background-image:url(assets/images/background/pattern-4.png)"></div>
-			<div class="auto-container">
-				<!--Video Box-->
-				<div class="video-box">
+			<div class="auto-container"> -->
+		<!--Video Box-->
+		<!-- <div class="video-box">
 					<figure class="video-image">
 						<img src="assets/images/resource/video-img.jpg" alt="">
 					</figure>
@@ -507,7 +764,7 @@
 								src="assets/images/icons/play.png" alt="" /><i class="ripple"></i></span></a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End Video One -->
 
 		<!-- Process One -->
@@ -523,7 +780,7 @@
 							<span></span>
 						</div>
 					</div>
-					<h2 class="sec-title_heading">See the value in <br> our It consulting <br> solutions</h2>
+					<h2 class="sec-title_heading">Our Mission and Vision</h2>
 				</div>
 				<div class="row clearfix">
 
@@ -532,10 +789,15 @@
 						<div class="step-block_one-inner">
 							<div class="step-block_one-bg"
 								style="background-image:url(assets/images/background/pattern-5.png)"></div>
-							<div class="step-block_one-number"><span>01</span>Step</div>
-							<h4 class="step-block_one-heading">Discover the Project</h4>
-							<div class="step-block_one-text">Our IT consultants collaborate with your team to fully
-								understand your unique needs.</div>
+							<div class="step-block_one-number"><span>01</span></div>
+							<!-- <h4 class="step-block_one-heading">Discover the Project</h4> -->
+							<div class="step-block_one-text">To be the leading provider of
+								innovative and reliable professional
+								services and information technology
+								solutions , empowering businesses to
+								achieve excellence through
+								unparalleled customer satisfaction,
+								technical expertise, and transparency</div>
 						</div>
 					</div>
 
@@ -544,10 +806,12 @@
 						<div class="step-block_one-inner">
 							<div class="step-block_one-bg"
 								style="background-image:url(assets/images/background/pattern-5.png)"></div>
-							<div class="step-block_one-number"><span>02</span>Step</div>
-							<h4 class="step-block_one-heading">Strategy Development</h4>
-							<div class="step-block_one-text">Our IT consultants collaborate with your team to fully
-								understand your unique needs.</div>
+							<div class="step-block_one-number"><span>02</span></div>
+							<!-- <h4 class="step-block_one-heading">Strategy Development</h4> -->
+							<div class="step-block_one-text">We envision a world where technology is at
+								the core of every successful business,
+								enabling global progress through digital
+								transformation.</div>
 						</div>
 					</div>
 
@@ -556,10 +820,12 @@
 						<div class="step-block_one-inner">
 							<div class="step-block_one-bg"
 								style="background-image:url(assets/images/background/pattern-5.png)"></div>
-							<div class="step-block_one-number"><span>03</span>Step</div>
-							<h4 class="step-block_one-heading">Implementation the solution</h4>
-							<div class="step-block_one-text">Our IT consultants collaborate with your team to fully
-								understand your unique needs.</div>
+							<div class="step-block_one-number"><span>03</span></div>
+							<!-- <h4 class="step-block_one-heading">Implementation the solution</h4> -->
+							<div class="step-block_one-text">Our mission is to deliver exceptional
+								professional services and
+								cutting-edge IT solutions that exceed
+								our clients’ expectations.</div>
 						</div>
 					</div>
 
@@ -568,10 +834,12 @@
 						<div class="step-block_one-inner">
 							<div class="step-block_one-bg"
 								style="background-image:url(assets/images/background/pattern-5.png)"></div>
-							<div class="step-block_one-number"><span>04</span>Step</div>
-							<h4 class="step-block_one-heading">Monitoring Progress</h4>
-							<div class="step-block_one-text">Our IT consultants collaborate with your team to fully
-								understand your unique needs.</div>
+							<div class="step-block_one-number"><span>04</span></div>
+							<!-- <h4 class="step-block_one-heading">Monitoring Progress</h4> -->
+							<div class="step-block_one-text">Our mission is to empower businesses with
+								innovative technology solutions that foster
+								growth, streamline processes, and drive
+								efficiency.</div>
 						</div>
 					</div>
 
@@ -581,16 +849,27 @@
 				<div class="process-one_content">
 					<!-- Button Box -->
 					<div class="process-one_button">
-						<a href="about.html" class="theme-btn btn-style-three">
+						<a href="https://wa.me/201097074096?text=Hello%20I%20would%20like%20to%20reach%20you%20about%20your%20services"
+							target="_blank" rel="noopener noreferrer" class="theme-btn btn-style-three">
 							<span class="btn-wrap">
-								<span class="text-one">Get Started</span>
-								<span class="text-two">Get Started</span>
+								<span class="text-one">
+									Get in Touch <i class="fa-brands fa-whatsapp"></i>
+								</span>
+								<span class="text-two">
+									Get in Touch <i class="fa-brands fa-whatsapp"></i>
+								</span>
 							</span>
 						</a>
 					</div>
-					<div class="process-one_content-text">There are many variations of passages of lorem free market to
-						<br> available, but the majority have alteration in some form, by injected <br> humour, or
-						randomised words.
+					<div class="process-one_content-text">
+						<ul>
+							<li>Delivering customer satisfaction with
+								personalized, responsive service.</li>
+							<li>Providing high-level technical
+								support to solve complex challenges.</li>
+							<li>Maintaining transparency in all our
+								operations and communications</li>
+						</ul>
 					</div>
 				</div>
 
@@ -599,11 +878,11 @@
 		<!-- End Process One -->
 
 		<!-- Offer Two -->
-		<section class="offer-two alternate">
+		<!-- <section class="offer-two alternate">
 			<div class="offer-two_bg" style="background-image:url(assets/images/background/offer-two_bg.png)"></div>
-			<div class="auto-container">
-				<!-- Sec Title -->
-				<div class="sec-title light centered">
+			<div class="auto-container"> -->
+		<!-- Sec Title -->
+		<!-- <div class="sec-title light centered">
 					<div class="sec-title_title">
 						<div class="sec-title_dots">
 							<span></span>
@@ -620,10 +899,10 @@
 					<h2 class="sec-title_heading">Help for you Overcome your <br> Technology Challenges</h2>
 				</div>
 
-				<div class="inner-container clearfix d-flex flex-wrap">
+				<div class="inner-container clearfix d-flex flex-wrap"> -->
 
-					<!-- Offer Block One -->
-					<div class="offer-block_one">
+		<!-- Offer Block One -->
+		<!-- <div class="offer-block_one">
 						<div class="offer-block_one-inner">
 							<a class="offer-block_one-link" href="#"></a>
 							<div class="offer-block_one-icon">
@@ -634,10 +913,10 @@
 							</div>
 							<h4 class="offer-block_one-title">Television</h4>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Offer Block One -->
-					<div class="offer-block_one">
+		<!-- Offer Block One -->
+		<!-- <div class="offer-block_one">
 						<div class="offer-block_one-inner">
 							<a class="offer-block_one-link" href="#"></a>
 							<div class="offer-block_one-icon">
@@ -648,10 +927,10 @@
 							</div>
 							<h4 class="offer-block_one-title">IOT</h4>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Offer Block One -->
-					<div class="offer-block_one">
+		<!-- Offer Block One -->
+		<!-- <div class="offer-block_one">
 						<div class="offer-block_one-inner">
 							<a class="offer-block_one-link" href="#"></a>
 							<div class="offer-block_one-icon">
@@ -662,10 +941,10 @@
 							</div>
 							<h4 class="offer-block_one-title">Android</h4>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Offer Block One -->
-					<div class="offer-block_one">
+		<!-- Offer Block One -->
+		<!-- <div class="offer-block_one">
 						<div class="offer-block_one-inner">
 							<a class="offer-block_one-link" href="#"></a>
 							<div class="offer-block_one-icon">
@@ -676,10 +955,10 @@
 							</div>
 							<h4 class="offer-block_one-title">Website</h4>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Offer Block One -->
-					<div class="offer-block_one">
+		<!-- Offer Block One -->
+		<!-- <div class="offer-block_one">
 						<div class="offer-block_one-inner">
 							<a class="offer-block_one-link" href="#"></a>
 							<div class="offer-block_one-icon">
@@ -692,10 +971,10 @@
 						</div>
 					</div>
 
-				</div>
+				</div> -->
 
-				<!-- Button Box -->
-				<div class="step-two_button text-center">
+		<!-- Button Box -->
+		<!-- <div class="step-two_button text-center">
 					<a href="about.html" class="theme-btn btn-style-two">
 						<span class="btn-wrap">
 							<span class="text-one">Discover More</span>
@@ -705,19 +984,19 @@
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 		<!-- End Offer Two -->
 
 		<!-- Testimonial One -->
-		<section class="testimonial-one">
+		<!-- <section class="testimonial-one">
 			<div class="testimonial-one_pattern-layer"
 				style="background-image:url(assets/images/background/pattern-6.png)"></div>
 			<div class="auto-container">
-				<div class="row clearfix">
-					<!-- Column -->
-					<div class="testimonial-one_content-column col-lg-5 col-md-12 col-sm-12">
-						<!-- Sec Title -->
-						<div class="sec-title title-anim">
+				<div class="row clearfix"> -->
+		<!-- Column -->
+		<!-- <div class="testimonial-one_content-column col-lg-5 col-md-12 col-sm-12"> -->
+		<!-- Sec Title -->
+		<!-- <div class="sec-title title-anim">
 							<div class="sec-title_title">
 								Testimonials
 								<div class="sec-title_dots">
@@ -732,9 +1011,9 @@
 						</div>
 						<div class="testimonial-one_talk d-flex"><span class="up-down_animation">Lets Talk</span>
 							<i><img src="assets/images/icons/hand-shake.png" alt="" /></i>
-						</div>
-						<!-- Button Box -->
-						<div class="testimonial-one_button d-flex justify-content-end">
+						</div> -->
+		<!-- Button Box -->
+		<!-- <div class="testimonial-one_button d-flex justify-content-end">
 							<a href="contact.html" class="theme-btn btn-style-three">
 								<span class="btn-wrap">
 									<span class="text-one">Contact Us</span>
@@ -744,20 +1023,76 @@
 						</div>
 						<div class="about-one_arrows"
 							style="background-image:url(assets/images/icons/testimonial-arrow.png)"></div>
-					</div>
-					<!-- Column -->
-					<div class="testimonial-one_carousel-column col-lg-7 col-md-12 col-sm-12">
+					</div> -->
+		<!-- Column -->
+		<!-- <div class="testimonial-one_carousel-column col-lg-7 col-md-12 col-sm-12">
 						<div class="testimonial-one_carousel-content">
 							<div class="testimonial-one_carousel-layer"
 								style="background-image:url(assets/images/background/pattern-7.png)"></div>
 
 							<div class="testimonial-one_carousel swiper-container">
-								<div class="swiper-wrapper">
+								<div class="swiper-wrapper"> -->
 
-									<!-- Slide -->
-									<div class="swiper-slide">
-										<!-- Testimonial Block One -->
-										<div class="testimonial-block_one">
+		<!-- Slide -->
+		<!-- <div class="swiper-slide"> -->
+		<!-- Testimonial Block One -->
+		<!-- <div class="testimonial-block_one">
+											<div class="testimonial-block_one-inner">
+												<div class="testimonial-block_one-author">
+													<div class="testimonial-block_one-author_image">
+														<img src="assets/images/resource/author-1.jpg" alt="" />
+													</div>
+													Bradley Gordon
+													<span>CEO & Founder, Archin Studio</span>
+												</div>
+												<div class="testimonial-block_one-text">“ A studio with passionate,
+													professional and full creativity. Much more than i’m expect. Great
+													services, high quality products & affordable prices. I’m extremly
+													satisfied!. ”</div>
+												<div class="testimonial-block_one-rating">
+													5.0 &nbsp;
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+												</div>
+											</div>
+										</div>
+									</div> -->
+
+		<!-- Slide -->
+		<!-- <div class="swiper-slide"> -->
+		<!-- Testimonial Block One -->
+		<!-- <div class="testimonial-block_one">
+											<div class="testimonial-block_one-inner">
+												<div class="testimonial-block_one-author">
+													<div class="testimonial-block_one-author_image">
+														<img src="assets/images/resource/author-1.jpg" alt="" />
+													</div>
+													Bradley Gordon
+													<span>CEO & Founder, Archin Studio</span>
+												</div>
+												<div class="testimonial-block_one-text">“ A studio with passionate,
+													professional and full creativity. Much more than i’m expect. Great
+													services, high quality products & affordable prices. I’m extremly
+													satisfied!. ”</div>
+												<div class="testimonial-block_one-rating">
+													5.0 &nbsp;
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+													<span class="fa fa-star"></span>
+												</div>
+											</div>
+										</div>
+									</div> -->
+
+		<!-- Slide -->
+		<!-- <div class="swiper-slide"> -->
+		<!-- Testimonial Block One -->
+		<!-- <div class="testimonial-block_one">
 											<div class="testimonial-block_one-inner">
 												<div class="testimonial-block_one-author">
 													<div class="testimonial-block_one-author_image">
@@ -782,68 +1117,12 @@
 										</div>
 									</div>
 
-									<!-- Slide -->
-									<div class="swiper-slide">
-										<!-- Testimonial Block One -->
-										<div class="testimonial-block_one">
-											<div class="testimonial-block_one-inner">
-												<div class="testimonial-block_one-author">
-													<div class="testimonial-block_one-author_image">
-														<img src="assets/images/resource/author-1.jpg" alt="" />
-													</div>
-													Bradley Gordon
-													<span>CEO & Founder, Archin Studio</span>
-												</div>
-												<div class="testimonial-block_one-text">“ A studio with passionate,
-													professional and full creativity. Much more than i’m expect. Great
-													services, high quality products & affordable prices. I’m extremly
-													satisfied!. ”</div>
-												<div class="testimonial-block_one-rating">
-													5.0 &nbsp;
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-												</div>
-											</div>
-										</div>
-									</div>
+								</div> -->
 
-									<!-- Slide -->
-									<div class="swiper-slide">
-										<!-- Testimonial Block One -->
-										<div class="testimonial-block_one">
-											<div class="testimonial-block_one-inner">
-												<div class="testimonial-block_one-author">
-													<div class="testimonial-block_one-author_image">
-														<img src="assets/images/resource/author-1.jpg" alt="" />
-													</div>
-													Bradley Gordon
-													<span>CEO & Founder, Archin Studio</span>
-												</div>
-												<div class="testimonial-block_one-text">“ A studio with passionate,
-													professional and full creativity. Much more than i’m expect. Great
-													services, high quality products & affordable prices. I’m extremly
-													satisfied!. ”</div>
-												<div class="testimonial-block_one-rating">
-													5.0 &nbsp;
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-													<span class="fa fa-star"></span>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-
-								<!-- Slider One Arrows -->
-								<div class="testimonial-one_arrow">
-									<!-- If we need navigation buttons -->
-									<div class="testimonial-one_carousel-prev fas fa-arrow-left fa-fw"></div>
+		<!-- Slider One Arrows -->
+		<!-- <div class="testimonial-one_arrow"> -->
+		<!-- If we need navigation buttons -->
+		<!-- <div class="testimonial-one_carousel-prev fas fa-arrow-left fa-fw"></div>
 									<div class="testimonial-one_carousel-next fas fa-arrow-right fa-fw"></div>
 								</div>
 
@@ -853,16 +1132,16 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End Testimonial One -->
 
 		<!-- Team One -->
-		<section class="team-one">
+		<!-- <section class="team-one">
 			<div class="team-one_layer" style="background-image:url(assets/images/background/pattern-8.png)"></div>
-			<div class="auto-container">
+			<div class="auto-container"> -->
 
-				<!-- Sec Title -->
-				<div class="sec-title centered">
+		<!-- Sec Title -->
+		<!-- <div class="sec-title centered">
 					<div class="sec-title_title">
 						<div class="sec-title_dots">
 							<span></span>
@@ -879,10 +1158,10 @@
 					<h2 class="sec-title_heading">You will work with the <br> best people</h2>
 				</div>
 
-				<div class="row g-0 clearfix">
+				<div class="row g-0 clearfix"> -->
 
-					<!-- Team Block One -->
-					<div class="team-one_one">
+		<!-- Team Block One -->
+		<!-- <div class="team-one_one">
 						<div class="inner-box">
 							<div class="image-box">
 								<figure class="image"><a href="team-detail.html"><img
@@ -905,10 +1184,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Team Block One -->
-					<div class="team-one_one">
+		<!-- Team Block One -->
+		<!-- <div class="team-one_one">
 						<div class="inner-box">
 							<div class="image-box">
 								<figure class="image"><a href="team-detail.html"><img
@@ -931,10 +1210,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Team Block One -->
-					<div class="team-one_one">
+		<!-- Team Block One -->
+		<!-- <div class="team-one_one">
 						<div class="inner-box">
 							<div class="image-box">
 								<figure class="image"><a href="team-detail.html"><img
@@ -957,10 +1236,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Team Block One -->
-					<div class="team-one_one">
+		<!-- Team Block One -->
+		<!-- <div class="team-one_one">
 						<div class="inner-box">
 							<div class="image-box">
 								<figure class="image"><a href="team-detail.html"><img
@@ -983,10 +1262,10 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-					<!-- Team Block One -->
-					<div class="team-one_one">
+		<!-- Team Block One -->
+		<!-- <div class="team-one_one">
 						<div class="inner-box">
 							<div class="image-box">
 								<figure class="image"><a href="team-detail.html"><img
@@ -1009,17 +1288,17 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
-				</div>
+		<!-- </div>
 
 				<div class="text-center">
 					<div class="team-one_info">
 						<div class="d-flex justify-content-center align-items-center">
 							<div class="team-one_info-text">A clear,concise headline that captures attention and
-								communicates your value proposition </div>
-							<!-- Button Box -->
-							<div class="team-one_info-button">
+								communicates your value proposition </div> -->
+		<!-- Button Box -->
+		<!-- <div class="team-one_info-button">
 								<a href="contact.html" class="theme-btn btn-style-one">
 									<span class="btn-wrap">
 										<span class="text-one">Contact Now</span>
@@ -1032,18 +1311,18 @@
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 		<!-- End Team One -->
 
 		<!-- Incredible One -->
-		<section class="incredible-one">
+		<!-- <section class="incredible-one">
 			<div class="incredible-one_bg"></div>
 			<div class="incredible-one_pattern" style="background-image:url(assets/images/background/pattern-9.png)">
 			</div>
 			<div class="incredible-one_vector" style="background-image:url(assets/images/background/pattern-10.png)">
 			</div>
 			<div class="auto-container">
-				<!-- Sec Title -->
+				
 				<div class="sec-title light title-anim">
 					<div class="sec-title_title">
 						Get to know
@@ -1057,20 +1336,20 @@
 				</div>
 				<div class="incredible-one_title">behind <br>company</div>
 			</div>
-		</section>
+		</section> -->
 		<!-- End Incredible One -->
 
 		<!-- Experiance One -->
-		<section class="experiance-one">
+		<!-- <section class="experiance-one">
 			<div class="marque-outer">
-				<!-- Animation Mode -->
+				
 				<div class="animation_mode">
 					<h1>chatbot</h1>
 					<h1 class="light">development</h1>
 					<h1>chatbot</h1>
 					<h1 class="light">development</h1>
 				</div>
-				<!-- Animation Mode Two -->
+				
 				<div class="animation_mode-two">
 					<h2>search engine marketing</h2>
 					<h2>search engine marketing</h2>
@@ -1084,7 +1363,7 @@
 					<div class="experiance-one_years-inner">
 						<div class="experiance-one_text">with more than 40+ years of experience, our team has become a
 							leader in this digital universe</div>
-						<!-- Button Box -->
+						
 						<div class="experiance-one_button">
 							<a href="about.html" class="theme-btn btn-style-one">
 								<span class="btn-wrap">
@@ -1097,7 +1376,7 @@
 				</div>
 
 			</div>
-		</section>
+		</section> -->
 		<!-- End Marketing One -->
 
 		<!-- Clients One -->
@@ -1121,19 +1400,75 @@
 					<h2 class="sec-title_heading">We’re happy to work with <br> largest brands</h2>
 				</div>
 
-				<div class="inner-container clearfix">
+				<div class="inner-container d-flex flex-wrap justify-content-center align-items-center">
 
 					<!-- Column -->
 					<div class="column">
 						<div class="client-image">
-							<a href="#"><img src="assets/images/clients/7.png" alt="" width="163" height="51" /></a>
+							<a href="#"><img src="assets/images/clients/Picture2.png" alt="" /></a>
 						</div>
 					</div>
 
 					<!-- Column -->
 					<div class="column">
 						<div class="client-image">
-							<a href="#"><img src="assets/images/clients/8.png" alt=""width="163" height="51" /></a>
+							<a href="#"><img src="assets/images/clients/hp.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/asa.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/5.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/1.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/3.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/4.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/6.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/7.png" alt="" /></a>
+						</div>
+					</div>
+
+					<!-- Column -->
+					<div class="column">
+						<div class="client-image">
+							<a href="#"><img src="assets/images/clients/8.png" alt="" /></a>
 						</div>
 					</div>
 
@@ -1151,12 +1486,14 @@
 						</div>
 					</div>
 
+
 					<!-- Column -->
 					<div class="column">
 						<div class="client-image">
 							<a href="#"><img src="assets/images/clients/11.png" alt="" /></a>
 						</div>
 					</div>
+
 
 					<!-- Column -->
 					<div class="column">
@@ -1165,6 +1502,8 @@
 						</div>
 					</div>
 
+
+
 					<!-- Column -->
 					<div class="column">
 						<div class="client-image">
@@ -1172,24 +1511,12 @@
 						</div>
 					</div>
 
-					<!-- Column -->
-					<div class="column">
-						<div class="client-image">
-							<a href="#"><img src="assets/images/clients/14.png" alt="" /></a>
-						</div>
-					</div>
+
 
 					<!-- Column -->
 					<div class="column">
 						<div class="client-image">
-							<a href="#"><img src="assets/images/clients/1.png" alt="" /></a>
-						</div>
-					</div>
-
-					<!-- Column -->
-					<div class="column">
-						<div class="client-image">
-							<a href="#"><img src="assets/images/clients/2.png" alt="" width="200" height="51" /></a>
+							<a href="#"><img src="assets/images/clients/15.png" alt="" /></a>
 						</div>
 					</div>
 
@@ -1205,24 +1532,28 @@
 			<div class="main-footer_vector" style="background-image:url(assets/images/icons/vector-3.png)"></div>
 			<div class="auto-container">
 				<div class="inner-container">
-					<div class="footer-logo"><a href="index.html"><img src="assets/images/footer-logo.svg" alt=""
-								title=""></a></div>
+					<!-- <div class="footer-logo"><a href="index.html"><img src="assets/images/logo1.svg" width="150"
+								height="51" alt="" title=""></a></div> -->
 					<div class="d-flex justify-content-between align-items-center flex-wrap">
 						<div class="footer-text">We are prioritize collaboration <br> With our clients</div>
 						<!-- Social Box -->
 						<div class="footer-social_box">
-							<a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
-							<a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-							<a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-							<a href="https://dribbble.com/"><i class="fa-brands fa-dribbble"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=61580659992608" target="_blank"><i
+									class="fa-brands fa-facebook-f"></i> </a>
+							<a href="https://www.instagram.com/tech.hub.me/" target="_blank"><i
+									class="fa-brands fa-instagram"></i></a>
+							<a href="https://wa.me/201097074096?text=Hello%20I%20would%20like%20to%20reach%20you%20about%20your%20services"
+								target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+							<a href="https://www.linkedin.com/company/techhub-me" target="_blank"><i
+									class="fa-brands fa-linkedin-in"></i></a>
 						</div>
 					</div>
 					<div class="footer-discuss"><span class="up-down_animation">let’s discuss!</span></div>
 					<ul class="footer-contact_list d-flex justify-content-end">
-						<li><a href="mailto:info@ithub.com">info@ithub.com</a></li>
-						<li><a href="tel:+123-456-789-00">+(123) 456 789 00</a></li>
+						<li><a href="mailto:Info@techhub-me.com">Info@techhub-me.com</a></li>
+						<li><a href="tel:+971 55 273 3535">+971 55 273 3535</a></li>
 					</ul>
-					<div class="footer-type_title variable-text"></div>
+					<div class="footer-type_title variable-text">Tech-Hub</div>
 				</div>
 
 			</div>
@@ -1237,7 +1568,7 @@
 							<!-- Slide -->
 							<div class="swiper-slide">
 								<!-- Instagram Block One -->
-								<div class="instagram-block_one">
+								<!-- <div class="instagram-block_one">
 									<div class="instagram-block_one-inner">
 										<div class="instagram-block_one-image">
 											<img src="assets/images/gallery/instagram-1.jpg" alt="" />
@@ -1250,13 +1581,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 
 							<!-- Slide -->
 							<div class="swiper-slide">
 								<!-- Instagram Block One -->
-								<div class="instagram-block_one">
+								<!-- <div class="instagram-block_one">
 									<div class="instagram-block_one-inner">
 										<div class="instagram-block_one-image">
 											<img src="assets/images/gallery/instagram-2.jpg" alt="" />
@@ -1269,13 +1600,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 
 							<!-- Slide -->
 							<div class="swiper-slide">
 								<!-- Instagram Block One -->
-								<div class="instagram-block_one">
+								<!-- <div class="instagram-block_one">
 									<div class="instagram-block_one-inner">
 										<div class="instagram-block_one-image">
 											<img src="assets/images/gallery/instagram-3.jpg" alt="" />
@@ -1288,13 +1619,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 
 							<!-- Slide -->
 							<div class="swiper-slide">
 								<!-- Instagram Block One -->
-								<div class="instagram-block_one">
+								<!-- <div class="instagram-block_one">
 									<div class="instagram-block_one-inner">
 										<div class="instagram-block_one-image">
 											<img src="assets/images/gallery/instagram-4.jpg" alt="" />
@@ -1307,13 +1638,13 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 
 							<!-- Slide -->
 							<div class="swiper-slide">
 								<!-- Instagram Block One -->
-								<div class="instagram-block_one">
+								<!-- <div class="instagram-block_one">
 									<div class="instagram-block_one-inner">
 										<div class="instagram-block_one-image">
 											<img src="assets/images/gallery/instagram-5.jpg" alt="" />
@@ -1326,7 +1657,7 @@
 											</div>
 										</div>
 									</div>
-								</div>
+								</div> -->
 							</div>
 
 						</div>
@@ -1338,7 +1669,7 @@
 			<div class="footer-bottom">
 				<div class="auto-container">
 					<!-- Copyright -->
-					<div class="main-footer_copyright">ITHUB &copy; 2025. All Rights Reserved.</div>
+					<div class="main-footer_copyright">TechHub &copy; 2025. All Rights Reserved.</div>
 				</div>
 			</div>
 		</footer>
