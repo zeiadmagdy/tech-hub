@@ -1,30 +1,39 @@
 <?php
 
-// Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "youremail@mail.com" );
+// Recipient
+define("RECIPIENT_NAME", "TechHub Website");
+define("RECIPIENT_EMAIL", "Info@techhub-me.com");
 
+// Read form values
+$userName = isset($_POST['username']) ? trim($_POST['username']) : "";
+$lastName = isset($_POST['lastname']) ? trim($_POST['lastname']) : "";
+$senderEmail = isset($_POST['email']) ? trim($_POST['email']) : "";
+$services = isset($_POST['services']) ? trim($_POST['services']) : "";
+$message = isset($_POST['message']) ? trim($_POST['message']) : "";
 
-// Read the form values
-$success = false;
-$userName = isset( $_POST['username'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['username'] ) : "";
-$senderEmail = isset( $_POST['email'] ) ? preg_replace( "/[^\.\-\' a-zA-Z0-9]/", "", $_POST['email'] ) : "";
-$message = isset( $_POST['message'] ) ? preg_replace( "/(From:|To:|BCC:|CC:|Message:|Content-Type:)/", "", $_POST['message'] ) : "";
+// If all required values exist, send the email
+if ($userName && $lastName && $senderEmail && $message) {
 
-// If all values exist, send the email
-if ( $userName && $senderEmail && $message) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
-  $headers = "From: " . $userName . " <" . $lastname . ">";
-  $msgBody = " Email: " . $senderEmail . " Message: " . $message . "";
-  $success = mail( $recipient, $headers, $msgBody );
+  $subject = "New Contact Form Submission";
 
-  //Set Location After Successsfull Submission
-  header('Location: contact.html?message=Successfull');
+  $msgBody = "Name: $userName $lastName\n";
+  $msgBody .= "Email: $senderEmail\n";
+  $msgBody .= "Services: $services\n";
+  $msgBody .= "Message:\n$message\n";
+
+  $headers = "From: " . RECIPIENT_EMAIL; // Use your domain email to avoid spam
+
+  if (mail($recipient, $subject, $msgBody, $headers)) {
+    header("Location: contact.html?message=Success");
+  } else {
+    header("Location: contact.html?message=Failed");
+  }
+
+  exit();
+
+} else {
+  header("Location: contact.html?message=Failed");
+  exit();
 }
-
-else{
-	//Set Location After Unsuccesssfull Submission
-  	header('Location: index.html?message=Failed');	
-}
-
 ?>

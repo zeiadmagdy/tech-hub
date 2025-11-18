@@ -434,6 +434,8 @@
 
 .clients-one {
 	position: relative;
+	margin-bottom: 60px;
+	
 }
 
 .clients-one .auto-container {
@@ -982,7 +984,7 @@
 
 .process-one {
 	position: relative;
-	padding: 200px 0px 120px;
+	padding: 200px 0px 50px;
 }
 
 .process-one.style-two {
@@ -2069,6 +2071,7 @@
 .experiance-one_years {
 	position: relative;
 	width: 100%;
+	margin-top: 150px;
 }
 
 .experiance-one_years-inner {
