@@ -435,7 +435,7 @@
 .clients-one {
 	position: relative;
 	margin-bottom: 60px;
-	
+
 }
 
 .clients-one .auto-container {
@@ -1018,10 +1018,11 @@
 
 .process-one .row {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	/* <<< makes all children equal height */
+	flex-wrap: wrap;
+	/* allow wrapping */
+	justify-content: center;
+	/* gap: 30px; */
+	/* spacing between cards */
 }
 
 .step-block_one:last-child .step-block_one-inner:before {
@@ -1043,7 +1044,7 @@
 	border: 2px solid #D9D9D9;
 }
 
-.step-block_one-inner:before {
+/* .step-block_one-inner:before {
 	position: absolute;
 	content: '';
 	right: -28px;
@@ -1054,7 +1055,7 @@
 	background: url(../images/icons/curve.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-}
+} */
 
 .step-block_one:last-child .step-block_one-inner::before {
 	display: none;
